@@ -13,14 +13,23 @@ def multiply(x,y):
 	print("{} x {} = {}".format(x, y, z))
 	return z
 	
+def divide(x,y):
+	z = x/y
+	print("{} / {} = {}".format(x, y, z))
+	return z
+	
 x = input("enter a letter :")
 print("you entered {}".format(x))
+num1 = float(input("input the first number: "))
+num2 = float(input("input a second number: "))
 
 if x == "a":
-	d = add(13,21)
+	d = add(num1,num2)
 elif x == "s":
-	e = subtract(20, 16)
+	e = subtract(num1, num2)
 elif x == "m":
-	f = multiply(2, 5)
+	f = multiply(num1, num2)
+elif x == "d":
+	g = divide(num1, num2)
 
 print("done")
